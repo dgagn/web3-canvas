@@ -16,7 +16,7 @@ const createRotation = (deg) => {
 const createHead = () => {
   ctx.beginPath();
   ctx.lineWidth = 2;
-  ctx.strokeStyle = 'black';
+  ctx.strokeStyle = '#000';
   ctx.arc(0, 0, 80, 0, 2 * Math.PI);
   ctx.stroke();
 };
@@ -27,7 +27,6 @@ const createHat = () => {
   ctx.moveTo(-100, y);
   ctx.lineTo(100, y);
   ctx.lineTo(0, y - Math.cos(Math.PI / 3) * 150);
-  console.log(Math.cos(Math.PI / 3) * 150);
   ctx.fillStyle = '#f6a653';
   ctx.fill();
 };
